@@ -12,8 +12,10 @@ pathToPluginManager = PATH_TO_THE_PLUGIN_MANAGER_FOLDER # example: 'C:/Documents
 sys.path.append(pathToPluginManager)
 import pluginManager
 
-pluginManager.init()
+pluginManager.init(silent=False)
 ```
+
+The silent Flag can be used to print the path of the loaded plugin directories at startup.
 
 To add plugins just create a new additional json File (like the examples) to the plugin folder.
 The json files needs the following structure:
