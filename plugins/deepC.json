@@ -1,0 +1,8 @@
+{
+	"env": [
+		{
+			"DeepC": "D:/Documents/Nuke/DeepC/build/install"
+		}
+		],
+	"plugin_path": "$DeepC"
+}

@@ -1,0 +1,8 @@
+{
+	"env": [
+		{
+			"CryptoMatte": "D:/Documents/Nuke/Cryptomatte/nuke"
+		}
+		],
+	"plugin_path": "$CryptoMatte"
+}
