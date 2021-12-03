@@ -3,7 +3,7 @@ import os
 
 import nuke
 
-def init():
+def init(silent=True):
     managerDirectory = os.path.dirname(__file__)
     plugins = os.listdir(os.path.join(managerDirectory, "plugins"))
     for plugin in plugins:
@@ -15,5 +15,8 @@ def init():
                         for key in item:
                             os.environ[key]=item[key]
                 if "plugin_path" in data:
-                    nuke.pluginAddPath(os.path.expandvars(data["plugin_path"]))
-                    print("Loaded Plugin: {}".format(os.path.expandvars(data["plugin_path"])))
+                    pluginPath = os.path.expandvars(data["plugin_path"])
+                    if os.path.exists(pluginPath):
+                        nuke.pluginAddPath(pluginPath)
+                    if not silent:
+                        print("Loaded Plugin: {}".format(os.path.expandvars(data["plugin_path"])))
