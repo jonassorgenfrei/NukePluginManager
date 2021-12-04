@@ -4,7 +4,7 @@ Plugin to Manage Nuke Plugins using json files without the need to touch any fil
 for testing and using nuke plugins.
 
 
-Just download/clone the PluginManager and add the following code to <user home directory>/.nuke/init.py
+Just download/clone the PluginManager and add the following code to ```<user home directory>/.nuke/init.py```
 
 ```
 import sys
@@ -17,7 +17,7 @@ pluginManager.init(silent=False)
 
 The silent flag can be used to print the path of the loaded plugin directories at startup (if set to False).
 
-To add plugins just create a new additional json File (like the examples) to the plugin folder.
+To add plugins just create a new additional json File (like the examples) in the plugin folder.
 The json files needs the following structure:
 
 ```
