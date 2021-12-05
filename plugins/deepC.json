@@ -1,9 +1,0 @@
-{
-	"enable": "nuke.NUKE_VERSION_MAJOR==13",
-	"env": [
-		{
-			"DeepC": "D:/Documents/Nuke/DeepC/build/install"
-		}
-		],
-	"plugin_path": "$DeepC"
-}
