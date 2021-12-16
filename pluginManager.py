@@ -38,6 +38,12 @@ def init(silent=True):
                     # load data 
 
                     # append environment variables
+                    if "expessionEnvs" in data:
+                        for item in data["expessionEnvs"]:
+                            for key in item:
+                                os.environ[key]=eval(os.path.expandvars(item[key]))
+                                
+                    # append environment variables
                     if "env" in data:
                         for item in data["env"]:
                             for key in item:

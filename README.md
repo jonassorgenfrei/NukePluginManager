@@ -25,6 +25,7 @@ Example json file structure:
 ```
 {
 	"enable": true,
+	"expessionEnvs" : [],
 	"env": [
 		{
 			"<NAME_OF_PLUGIN>": "<PATH_TO_PLUGIN>"
@@ -42,6 +43,7 @@ All keys are optional.
 | Json Keys  | description |
 | --- | --- |
 | enable  | (boolean/string) Flag if the plugin should be enabled. Can be a simple expression like: nuke.NUKE_VERSION_MAJOR==13 |
+| expessionEnvs | (string) Python expresion which will be evaluated on runtime, eg. to determine the nuke version used |
 | env  | (list of dict with strings) Environment variables like the path to the plugin or multiple subpathes or other environment variables |
 | plugin_path  | (string) The path to the plugin which should be appended to the nuke plugin pathes |
 
