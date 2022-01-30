@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 
 import nuke
 
@@ -47,7 +48,11 @@ def init(silent=True):
                     if "env" in data:
                         for item in data["env"]:
                             for key in item:
-                                os.environ[key]=os.path.expandvars(item[key])
+                                value = item[key]
+                                if key == "PYTHONPATH":
+                                    sys.path.append(os.path.expandvars(value))
+                                else:
+                                    os.environ[key]=os.path.expandvars(value)
 
                     # append plugin pathes
                     if "plugin_path" in data:

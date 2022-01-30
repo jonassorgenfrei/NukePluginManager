@@ -1,0 +1,12 @@
+{
+	"enable": "nuke.NUKE_VERSION_MAJOR>=12",
+	"env": [
+		{
+			"jsAssetBrowser": "D:/Documents/Development/AssetBrowser"
+		},
+		{
+			"PYTHONPATH" : "$jsAssetBrowser/src"
+		}
+	],
+	"plugin_path": "$jsAssetBrowser/plugins/nuke/scripts"
+}

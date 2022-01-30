@@ -47,4 +47,14 @@ All keys are optional.
 | env  | (list of dict with strings) Environment variables like the path to the plugin or multiple subpathes or other environment variables |
 | plugin_path  | (string) The path to the plugin which should be appended to the nuke plugin pathes |
 
-Note: A definition can be used to only add environment variables on start up. See: examplePlugins/env.json
+Note: if the environment key is PYTHONPATH, the value will be appended to the sys path on startup. 
+This way exteral libraries can be added on startup.
+
+Note: A definition can also be used to only add environment variables on start up. See: examplePlugins/env.json
+
+
+## Examples
+For the example Plugins the corresponding websites can be found here:
+- Crypto Matte https://github.com/Psyop/Cryptomatte
+- DeepC https://github.com/charlesangus/DeepC
+- jsAssetBrowser https://github.com/jonassorgenfrei/AssetBrowser
