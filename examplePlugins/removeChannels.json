@@ -1,0 +1,14 @@
+{
+	"enable": "nuke.NUKE_VERSION_MAJOR>=12",
+	"expessionEnvs": [
+		{
+		"RemoveCannelsVersionString": "\"{}.{}v{}\".format(nuke.NUKE_VERSION_MAJOR, nuke.NUKE_VERSION_MINOR, nuke.NUKE_VERSION_RELEASE)"
+		}
+		],
+	"env": [
+		{
+			"RemoveCannels": "D:/Documents/Nuke/Nuke-RemoveChannels/install"
+		}
+		],
+	"plugin_path": "$RemoveCannels/$RemoveCannelsVersionString"
+}

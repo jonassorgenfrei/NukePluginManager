@@ -1,9 +1,14 @@
 {
-	"enable": "nuke.NUKE_VERSION_MAJOR==13",
-	"env": [
+	"enable": "nuke.NUKE_VERSION_MAJOR>=12",
+	"expessionEnvs": [
 		{
-			"DeepC": "D:/Documents/Nuke/DeepC/build/install"
+		"DeepCVersionString": "\"{}.{}v{}\".format(nuke.NUKE_VERSION_MAJOR, nuke.NUKE_VERSION_MINOR, nuke.NUKE_VERSION_RELEASE)"
 		}
 		],
-	"plugin_path": "$DeepC"
+	"env": [
+		{
+			"DeepC": "D:/Documents/Nuke/DeepC/install"
+		}
+		],
+	"plugin_path": "$DeepC/$DeepCVersionString"
 }

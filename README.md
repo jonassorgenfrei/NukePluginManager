@@ -58,3 +58,4 @@ For the example Plugins the corresponding websites can be found here:
 - Crypto Matte https://github.com/Psyop/Cryptomatte
 - DeepC https://github.com/charlesangus/DeepC
 - jsAssetBrowser https://github.com/jonassorgenfrei/AssetBrowser
+- RemoveCannels https://github.com/Ahuge/Nuke-RemoveChannels
